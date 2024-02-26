@@ -1,10 +1,10 @@
-name: Github Actions Demo  
+name: Github Actions Demo
 
 on:
   workflow_dispatch:
 
 jobs:
-  Build:
+  my_job:
     runs-on: ubuntu-latest
     steps:
       - name: echo hello
