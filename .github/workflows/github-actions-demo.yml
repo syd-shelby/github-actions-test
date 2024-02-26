@@ -5,11 +5,11 @@ on:
 
 jobs:
   Build:
-  runs-on: ubuntu-latest
-  steps: 
-   - run: echo 'Hello World!'
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo 'Hello World!'
 
-   - uses: actions/checkout@v3.3.0
+      - uses: actions/checkout@v3.3.0
 
-   - name: Echo helloworld
+      - name: Echo helloworld
 
