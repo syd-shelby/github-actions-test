@@ -1,7 +1,6 @@
 name: Github Actions Demo  
 
 on: 
-  workflow_dispatch:
   push:
     branches: [ main ]
       paths-ignore: [ .github/** ]
@@ -9,6 +8,7 @@ on:
     branches: [ main ]
   schedule:
     - cron: '15 18 * * 0'
+  workflow_dispatch:
 
 jobs:
   Build:
