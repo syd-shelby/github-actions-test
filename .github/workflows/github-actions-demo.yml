@@ -1,0 +1,22 @@
+name: Github Actions Demo  
+
+on: 
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+      paths-ignore: [ .github/** ]
+  pull:
+    branches: [ main ]
+  schedule:
+    - cron: '15 18 * * 0'
+
+jobs:
+  Build:
+  runs-on: ubuntu-latest
+  steps: 
+   - run: echo 'Hello World!'
+
+   - uses: actions/checkout@v3.3.0
+
+   - name: Echo helloworld
+
