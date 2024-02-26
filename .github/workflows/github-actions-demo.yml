@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo hello
+      - uses: actions/checkout@v3.3.0
       run: echo 'Hello World!'
 
-      - uses: actions/checkout@v3.3.0
+      
 
